@@ -15,55 +15,28 @@ html {
   text-align: center;
   background-color: #282c34;
   height: 100vh;
-
-  .form-container {
-    margin: auto;
-  }
-
-  .home-heading {
-    display: flex;
-    flex-direction: column;
-    height: 16vh;
-    justify-content: space-between;
-    margin: 2vh;
-
-
-    h1 {
-      color: #2A9C57;
-      font-size: 50px;
-    }
-    h3 {
-      color: #c2c2c2;
-    }
-    p {
-      color: #a2a2a2;
-    }
-  }
 }
 
-.logo {
-  height: 20vmin;
-  pointer-events: none;
-  margin: 30px;
-}
+// .logo {
+//   height: 20vmin;
+//   pointer-events: none;
+//   margin: 30px;
+// }
 
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+// @media (prefers-reduced-motion: no-preference) {
+//   .logo {
+//     animation: logo-spin infinite 20s linear;
+//   }
+// }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 
-.title-heading {
-  color: white;
-}
 
 
