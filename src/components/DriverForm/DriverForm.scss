@@ -1,7 +1,10 @@
+$main-green: #2A9C57;
+
 form {
   display: flex;
   flex-direction: column;
   width: 50%;
+  min-width: 450px;
   margin: 0 auto 100px auto;
   padding: 20px 30px;
   background-color: rgb(136, 136, 136);
@@ -26,6 +29,7 @@ form {
       height: 35px;
       margin-bottom: 5px;
       border: none;
+      padding: 6px;
     }
   }
 
@@ -36,6 +40,12 @@ form {
     margin: 0 auto;
     font-size: 14px;
     font-weight: 700;
+  }
+
+  .success-msg {
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
   }
 
 

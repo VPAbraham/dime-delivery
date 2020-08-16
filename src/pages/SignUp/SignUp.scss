@@ -1,0 +1,35 @@
+$main-green: #2A9C57;
+
+.title-heading {
+  color: white;
+}
+
+.sign-up {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+
+  .form-container {
+    margin: auto;
+  }
+
+  .home-heading {
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    justify-content: space-between;
+    margin: 2vh;
+
+
+    h1 {
+      color: $main-green;
+      font-size: 50px;
+    }
+    h3 {
+      color: #c2c2c2;
+    }
+    p {
+      color: $main-green;
+    }
+  }
+}
