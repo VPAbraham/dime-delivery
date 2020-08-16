@@ -1,3 +1,5 @@
+$main-green: #2A9C57;
+
 form {
   display: flex;
   flex-direction: column;
@@ -38,6 +40,12 @@ form {
     margin: 0 auto;
     font-size: 14px;
     font-weight: 700;
+  }
+
+  .success-msg {
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
   }
 
 

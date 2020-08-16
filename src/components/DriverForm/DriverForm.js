@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 import './DriverForm.scss';
 import { Button } from 'reactstrap';
-import { Route, Link } from 'react-router-dom';
-import SubConfirm from '../../pages/SubConfirm/SubConfirm';
 
 
   class DriverForm extends Component {
@@ -17,7 +15,8 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
         company: '',
         locationnum: '',
         oapartners: '',
-        posvender: ''
+        posvender: '',
+        isSubmitted: false
       }
     }
     handleChange = (e) => {
@@ -33,7 +32,7 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
         company, 
         locationnum, 
         oapartners, 
-        posvendors 
+        posvendors, 
       } = this.state;
 
       let templateParams = {
@@ -45,21 +44,24 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
         locationNum: locationnum,
         oapartners,
         posvendors
-      }      
+      };
       let userId = "user_x5uABT0eKoQ966cPycy9d";
-      console.log(process.env.REACT_APP_API_KEY)
+      console.log(process.env.REACT_APP_API_KEY);
 
       emailjs.send(
         'default_service',
         'template_FOllX5rW',
         templateParams,
         process.env.REACT_APP_API_KEY
-      )
+      );
+
+      this.setState({isSubmitted: true});
     }
 
 
 
     render() {
+      const submitButton = <Button type='submit' onClick={(e) => {this.handleSubmit(e)}}>SUBMIT INFORMATION</Button>
       return (
         <div>
           <form className="signup-form">
@@ -87,6 +89,7 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
                 id='form-input' 
                 className="phone" 
                 onChange={this.handleChange}
+                required
               />
             </div>
             <div>
@@ -95,6 +98,7 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
                 id='form-input' 
                 className="email" 
                 onChange={this.handleChange} 
+                required
               />
             </div>
             <div>
@@ -129,9 +133,7 @@ import SubConfirm from '../../pages/SubConfirm/SubConfirm';
                 onChange={this.handleChange}
               />
             </div>
-            <Route component={SubConfirm}>
-              <Button type='submit' onClick={(e) => {this.handleSubmit(e)}}>SUBMIT INFORMATION</Button>
-            </Route>
+              {this.state.isSubmitted ? <p className='success-msg'>Thanks for submitting your information! We will get in touch shortly!</p> : submitButton} 
           </form>
         </div>
       )
