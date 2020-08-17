@@ -45,13 +45,12 @@ import { Button } from 'reactstrap';
         oapartners,
         posvendors
       };
-      console.log(process.env.REACT_APP_API_KEY);
       emailjs.send(
         'default_service',
         'template_FOllX5rW',
         templateParams,
         process.env.REACT_APP_API_KEY
-      );
+      ).then(response => console.log(response))
 
       this.setState({isSubmitted: true});
     }
