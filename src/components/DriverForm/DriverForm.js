@@ -46,7 +46,6 @@ import { Button } from 'reactstrap';
         posvendors
       };
       console.log(process.env.REACT_APP_API_KEY);
-      const accessKey = 
       emailjs.send(
         'default_service',
         'template_FOllX5rW',
