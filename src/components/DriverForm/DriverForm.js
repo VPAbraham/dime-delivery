@@ -45,9 +45,8 @@ import { Button } from 'reactstrap';
         oapartners,
         posvendors
       };
-      let userId = "user_x5uABT0eKoQ966cPycy9d";
       console.log(process.env.REACT_APP_API_KEY);
-
+      const accessKey = 
       emailjs.send(
         'default_service',
         'template_FOllX5rW',
@@ -57,8 +56,6 @@ import { Button } from 'reactstrap';
 
       this.setState({isSubmitted: true});
     }
-
-
 
     render() {
       const submitButton = <Button type='submit' onClick={(e) => {this.handleSubmit(e)}}>SUBMIT INFORMATION</Button>
