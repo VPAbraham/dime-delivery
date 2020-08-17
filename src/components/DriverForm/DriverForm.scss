@@ -1,5 +1,9 @@
 $main-green: #2A9C57;
 
+.driver-form {
+  display: block;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -9,7 +13,6 @@ form {
   padding: 20px 30px;
   background-color: rgb(136, 136, 136);
   justify-content: space-around;
-  height: 80vh;
   border-radius: 3px;
 
   div{
@@ -30,6 +33,7 @@ form {
       margin-bottom: 5px;
       border: none;
       padding: 6px;
+      border-radius: 2px;
     }
   }
 
@@ -37,7 +41,7 @@ form {
   button {
     width: 200px;
     height: 50px;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 14px;
     font-weight: 700;
   }

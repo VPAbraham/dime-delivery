@@ -63,7 +63,7 @@ import { Button } from 'reactstrap';
     render() {
       const submitButton = <Button type='submit' onClick={(e) => {this.handleSubmit(e)}}>SUBMIT INFORMATION</Button>
       return (
-        <div>
+        <div className='driver-form'>
           <form className="signup-form">
             <div>
               <label className="">First Name</label>
