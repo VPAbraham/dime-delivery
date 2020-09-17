@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
-import SignUp from './pages/SignUp/SignUp';
+import DriverSignUp from './pages/DriverSignUp/DriverSignUp';
 
 
 function App() {
   return (
       <div className="App">
         <div className='form-container'>
-          <SignUp />
+          <DriverSignUp />
         </div>
 
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import './SignUp.scss';
+import './DriverSignUp.scss';
 
 import DriverForm from '../../components/DriverForm/DriverForm';
 
-const SignUp = () => {
+const DriverSignUp = () => {
   return (
-    <div className='sign-up'>
+    <div className='driver-sign-up'>
       <div className='home-heading'>
         <h1>Dimebags Delivery</h1>
         <h3>Delivery Drivers Wanted</h3>
@@ -16,4 +16,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp;
+export default DriverSignUp;
