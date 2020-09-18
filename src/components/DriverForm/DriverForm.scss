@@ -1,4 +1,5 @@
 $main-green: #2A9C57;
+@import '../../variables';
 
 .driver-form {
   display: block;
@@ -11,7 +12,7 @@ form {
   min-width: 450px;
   margin: 0 auto 100px auto;
   padding: 20px 30px;
-  background-color: rgb(136, 136, 136);
+  background-color: $grey-bg;
   justify-content: space-around;
   border-radius: 3px;
 
@@ -22,13 +23,13 @@ form {
     text-align: left;
 
     label {
-      color: rgb(57, 57, 57);
+      color: $accent-slate;
       font-size: 18px;
       margin: 3px;
     }
   
     input {
-      background-color: #E4E4E4;
+      background-color: $accent-white;
       height: 35px;
       margin-bottom: 5px;
       border: none;
@@ -48,7 +49,7 @@ form {
 
   .success-msg {
     font-size: medium;
-    color: rgb(255, 255, 255);
+    color: $accent-white;
     font-weight: bold;
   }
 

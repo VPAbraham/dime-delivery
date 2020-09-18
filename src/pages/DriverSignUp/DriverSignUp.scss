@@ -1,12 +1,13 @@
 $main-green: #2A9C57;
+@import '../../variables';
 
 .title-heading {
-  color: white;
+  color: $accent-white;
 }
 
 .driver-sign-up {
   text-align: center;
-  background-color: #282c34;
+  background-color: $form-slate-bg;
   display: flex;
   flex-direction: column;
 
@@ -30,7 +31,7 @@ $main-green: #2A9C57;
       font-size: 50px;
     }
     h3 {
-      color: #c2c2c2;
+      color: $form-white-accent;
     }
     p {
       color: $main-green;
